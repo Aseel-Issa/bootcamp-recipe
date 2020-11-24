@@ -12,3 +12,10 @@ const findRecepies = function () {
         renderer.renderAllRecpies(results)
     }, 3000)
 }
+
+const alertIngredient = function(){
+    const ing = $(this).closest('.recepie').find('.ingredient')
+    alert(ing[0].outerText)
+}
+
+$('body').on('click', '.recepie-image', alertIngredient)

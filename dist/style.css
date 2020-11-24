@@ -1,0 +1,40 @@
+body{
+    background-color: #edf5e1
+}
+.recepie{
+    background-color: #8ee4af;
+    padding: 10px;
+    margin: 3px;
+}
+
+#recepies{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.recepie-image{
+    height: 55vh;
+    margin: auto;
+}
+
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+input{
+    width: 70%;
+}
+
+button{
+    width: 20%;
+}
+
+h1{
+    color: #05386b;
+}
+
+li {
+    color: #05386b;
+}
