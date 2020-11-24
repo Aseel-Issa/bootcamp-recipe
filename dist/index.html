@@ -19,9 +19,11 @@
 
     <script id="recepie-template" type="text/x-handlebars-template">
         <div class="recepie" data-id="{{title}}">
-            <img class="recepie-image" src="{{image}}">
+            <a class="recepie-video" href="{{video}}">
+                <img class="recepie-image" src="{{image}}">
+            </a>
             <p class="recepie-title">{{title}}</p>
-            <a class="recepie-video" href="{{video}}">Click here to check the recepie's video.</a>
+            <!-- Click here to check the recepie's video. -->
             <ul class="recepie-ingredients">
                 {{#each ingredients}}
                     <li>{{this}}</li>
