@@ -12,10 +12,10 @@ router.get('/recipes/:ingredient', function (request, response) {
     urllib.request(`https://recipes-goodness.herokuapp.com/recipes/${ing}`, function (err, data, res) {
         if (err) {
             console.log(err)
-            throw err; // you need to handle error
+            throw err; 
         }
-        // data is Buffer instance
         let results = JSON.parse(data).results
+        results = results.map(result => ({ title: result.title, video: result.href, image: result.thumbnail, ingredients: result.ingredients }))
         response.send(results)
     });
 })
